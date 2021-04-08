@@ -1,0 +1,704 @@
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "RocknRoll One", sans-serif;
+  /* font-family: "Noto Sans JP", sans-serif; */
+  scroll-behavior: smooth;
+}
+/* --------------------------------------------------Page0---------------------------------------------- */
+.page0 {
+  background-color: aquamarine;
+  min-height: 100vh;
+}
+/* -------greeting css-------- */
+.greetdiv {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.greetdiv h1 {
+  padding: 20px;
+  background-color: greenyellow;
+  color: rgb(86, 61, 231);
+  border-radius: 20px;
+  font-size: 50px;
+}
+/* ------websites css--------- */
+.webslink {
+  margin-left: 150px;
+  color: rgb(86, 61, 231);
+}
+.webslink ol a {
+  color: black;
+  text-decoration: none;
+}
+.webslink ol li {
+  margin-top: 8px;
+  color: black;
+  text-decoration: none;
+}
+.webslink ol li button {
+  text-decoration: none;
+  background-color: transparent;
+  color: rgb(255, 0, 212);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.webslink ol li button:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+/* ---------------------------------------------------------Page1------------------------------------------- */
+.page1 {
+  background-color: aquamarine;
+  min-height: 100vh;
+}
+.headbody {
+  text-align: center;
+  font-size: 35px;
+  color: red;
+}
+.bodydiv {
+  text-align: center;
+}
+.bodydiv1 {
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 30px;
+}
+
+/* ---------------------------------------------------------page2--------------------------------------------- */
+
+/* body {
+  background-color: lightblue;
+  background-image: url("down.png");
+  background-repeat: repeat;
+  background-size: initial;
+} */
+
+.p2main {
+  position: relative;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  z-index: 10;
+}
+.p2main:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 0;
+  height: 150%;
+  width: 100%;
+  background: red;
+  transform: skew(0deg, -1.5deg);
+  z-index: -10;
+}
+.p2maindiv {
+  background-color: red;
+}
+.p2maindiv h1 {
+  text-align: center;
+  margin-block-start: 0px;
+  color: white;
+  font-weight: bold;
+}
+
+/* -----listcard------ */
+.listcon {
+  background-color: lightblue;
+  background-image: url("down.png");
+  background-repeat: repeat;
+  background-size: initial;
+  background-position: fixed;
+}
+.listcarddiv {
+  padding-top: 100px;
+}
+.licard {
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px 5px grey;
+  z-index: 1;
+  position: relative;
+}
+.licard:hover {
+  transform: scale(1.05);
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px 5px grey;
+}
+.licard img {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  height: width * 1.5;
+  max-height: 450px;
+}
+.licard-body {
+  text-align: left;
+}
+.licard-body h3 {
+  margin-top: 5px;
+  font-size: 20px;
+}
+.licard-no {
+  width: 120%;
+  height: 0px;
+  position: relative;
+  z-index: 2;
+}
+.licard-no:after {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: -15px;
+  height: 60px;
+  width: 110%;
+  background: red;
+  transform: skew(0deg, -8deg);
+  z-index: 2;
+}
+.licard-body div a {
+  font-size: 10px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 8px;
+}
+.licard-body div h6 {
+  z-index: 3;
+  display: inline;
+  position: absolute;
+  right: 20px;
+  color: white;
+  bottom: 0px;
+  font-size: 30px;
+}
+/* -------------------------------------------------page3-------------------------------------------------- */
+.page3 {
+  /* background-color: rgb(23, 38, 119); */
+  min-height: 100vh;
+  /* position: relative; */
+}
+.page3main {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  top: 50%;
+  position: absolute;
+}
+
+/* --------------------------------------------------page4---------------------------------------------------- */
+
+.page4main {
+  min-height: 101vh;
+  height: 100%;
+  width: 100%;
+  background-color: #eaeef3;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.navmain {
+  width: 100%;
+  margin: 0px;
+  padding: 0 20px;
+  height: 48px;
+  background-color: #61dafb;
+
+  overflow: hidden;
+  position: fixed;
+}
+.navboarder {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    #fd8817 10%,
+    #f9752a 20%,
+    #f8573f 30%,
+    #fb3b52 40%,
+    #fb2761 50%,
+    #eb0982 60%,
+    #c1188d 70%,
+    #9b1ba4 80%,
+    #6e1dc0 90%,
+    #5321ce 100%
+  ) !important;
+}
+.navlogo {
+  width: 25%;
+  opacity: 1;
+  position: relative;
+}
+.navlogo img {
+  height: 40px;
+  position: absolute;
+  margin-top: 4px;
+}
+.navlogo h6 {
+  padding-left: 50px;
+  margin: 0px;
+  margin-left: 20px;
+  font-size: 32px;
+  line-height: 50px;
+  background: -webkit-linear-gradient(
+    #fd8817 10%,
+    #f9752a 20%,
+    #f8573f 30%,
+    #fb3b52 40%,
+    #fb2761 50%,
+    #eb0982 60%,
+    #c1188d 70%,
+    #9b1ba4 80%,
+    #6e1dc0 90%,
+    #5321ce 100%
+  );
+  -webkit-background-clip: text;
+  font-family: "RocknRoll One", sans-serif;
+  background-clip: 0;
+  -webkit-text-fill-color: transparent;
+}
+
+.navlist {
+  width: 75%;
+}
+.navlist ul {
+  list-style: none;
+  line-height: 10px;
+  z-index: 20;
+}
+.navlist ul li {
+  margin: 20px 10px;
+  padding: 5px;
+  float: right;
+}
+.navlist ul li a {
+  border: solid 0px #343a40;
+  border-radius: 30px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 6px;
+  font-weight: bolder;
+}
+.navlist ul li a:hover {
+  background-color: rgb(0, 255, 76, 0.7);
+}
+.themebtn {
+  box-shadow: none;
+  border: none;
+  border-radius: 30px;
+}
+.themebtn:focus {
+  box-shadow: none;
+  border: none;
+}
+.themebtn:active {
+  border: none;
+  box-shadow: none;
+}
+/* switch button  */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 124px;
+  height: 44px;
+  border: 2px solid rgb(245, 63, 31);
+  border-radius: 32px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch p {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-right: 40px;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 40px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 32px;
+  width: 32px;
+  left: 4px;
+  bottom: 4px;
+  background-color: red;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 32px;
+  z-index: 3;
+}
+
+input:checked + .slider {
+  background-color: black;
+  border-radius: 40px;
+}
+.input:focus + .slider {
+  /* box-shadow: 0 0 1px #2196f3; */
+  border-radius: 40px;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(80px);
+  -ms-transform: translateX(80px);
+  transform: translateX(80px);
+}
+/* ---------------------nav end ------------ */
+
+.page4mainhead {
+  width: 100%;
+}
+.page4mainhead h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "RocknRoll One", sans-serif;
+}
+
+.ourteammain {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 13px 21px -5px rgba(0, 0, 0, 0.3);
+}
+.ourteammain :hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  background-color: violet;
+}
+.teamcard {
+  width: 100%;
+  height: 100%;
+  background-color: violet;
+  border-radius: 10px;
+}
+.areamain {
+  padding: 30px 24px;
+  width: 100%;
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+.areafilterdiv {
+  padding: 10px 0;
+  overflow: hidden;
+  display: none;
+}
+.changeviewdiv img {
+  width: auto;
+  height: 38px;
+  border-radius: 10px;
+}
+.vbtnp {
+  cursor: pointer;
+}
+.viewtable {
+  float: left;
+}
+.viewgrid {
+  box-sizing: border-box;
+  margin: 0px 58px;
+}
+.viewcrusl {
+  float: right;
+}
+.areafilterbtndiv button {
+  width: 100%;
+}
+.areatablediv {
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: white;
+  min-height: 300px;
+  padding: 5px 10px;
+}
+.areatablediv table {
+  margin: 0px;
+  border: none;
+}
+.areatablediv table tbody tr td {
+  border-style: none;
+}
+.tablewidth {
+  max-width: 200px;
+  min-height: 50px;
+  overflow: hidden;
+}
+
+/* ---------------------------------------------------------------page 5------------------------------------------------- */
+.page5main {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "RocknRoll One", sans-serif;
+}
+.page5heading {
+  font-family: "RocknRoll One", sans-serif;
+  margin-bottom: 30px;
+}
+.loginmain {
+  min-height: 80vh;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.meestlogo {
+  background-image: url(./meest\ logo\ new\ .png);
+  width: 100%;
+  background-size: 600px;
+  background-position: center;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.loginmaindiv {
+  min-height: 80vh;
+  padding: 80px 300px;
+  perspective: 1500px;
+  position: relative;
+}
+.ldivback {
+  background-image: url(./bg1.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition-duration: 2s;
+}
+.logindiv {
+  background-color: white;
+  height: 100%;
+  border-radius: 25px;
+  padding: 50px;
+  padding-top: 50px;
+  transform-style: preserve-3d;
+  transition-duration: 2s;
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.logindivani {
+  transform: scale(1.1) rotateY(-180deg);
+}
+.loginform {
+  margin-top: 30px;
+  display: block;
+}
+.registerform {
+  margin-top: 10px;
+  transform: rotateY(-180deg);
+  height: 100%;
+  width: 100%;
+}
+.disnone {
+  display: none;
+}
+.forminput {
+  padding-left: 25px;
+  border-radius: 30px;
+  height: 50px;
+  margin-top: 20px;
+  width: 100%;
+  left: 0px;
+}
+.formbtndiv {
+  float: right;
+  width: 100%;
+  margin-top: 35px;
+}
+.formbtn {
+  height: 50px;
+  width: 100%;
+  border-radius: 25px;
+}
+.formbtndiv p {
+  font-size: 14px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.ltrbtn {
+  text-align: center;
+  width: 100%;
+  left: 0px;
+  position: absolute;
+  bottom: 0px;
+  cursor: pointer;
+}
+.ltrbtn1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.ltrbtn1 p {
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+  bottom: -210px;
+}
+
+/* -----------------------------------------------------page6----------------------------------------------------- */
+.page6 {
+  width: 100%;
+  min-height: 101vh;
+  height: 100%;
+  background-color: #eaeef3;
+  background-position: center;
+  /* font-family: "Noto Sans JP", sans-serif; */
+  overflow: hidden;
+}
+
+.dsboption {
+  width: 300px;
+  height: 100%;
+  top: 49px;
+  left: 0px;
+  min-height: 70vh;
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  position: fixed;
+  bottom: 0px;
+}
+.dsbuser {
+  width: 100%;
+  /* height: 80px; */
+  padding: 10px 0px;
+  /* height: 100%; */
+  overflow: hidden;
+}
+.dsbudiv {
+  background-color: #eaeef3;
+  border-radius: 10px;
+  padding: 0px;
+  width: 100%;
+}
+.cuserimg {
+  width: 30%;
+}
+.cuserimg img {
+  width: 100%;
+}
+.cuserun {
+  width: 70%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.dsbuseroption {
+  padding: 10px;
+  overflow: hidden;
+}
+.dsbuserdo {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 30px;
+  cursor: default;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+.dsbuserdo a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 100%;
+}
+.dsbuserdospan {
+  line-height: 10px;
+  padding-right: 165px;
+}
+.dsbuserdo a span {
+  transition-duration: 0.3s;
+}
+.dsbuserdo a:hover span {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.dsbuserdoul li {
+  text-decoration: none;
+  padding-top: 5px;
+  list-style: none;
+}
+.dsbuserdoul li:hover {
+  font-weight: bold;
+}
+
+.aniarrowchange {
+  transform: rotate(90deg);
+  transition-duration: 0.3s;
+  height: auto;
+}
+.aniarrowchangeul {
+  display: block;
+  transition-duration: 0.3s;
+  height: 115px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.dsbview {
+  width: 100%;
+  float: right;
+  height: 100%;
+  overflow: hidden;
+  padding: 12px;
+  margin-top: 40px;
+  padding-left: 310px;
+}
+.nviewmain {
+  width: 100%;
+  border-radius: 20px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.nviewcard {
+  border-radius: 10px;
+  min-height: 150px;
+  background-color: white;
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.3);
+}
+.cvcarddivimg {
+  width: 40%;
+  line-height: 150px;
+}
+.cvcarddivimg img {
+  width: 100%;
+}
+.cvcarddiv {
+  width: 60%;
+}
+.cvcarddiv h2 {
+  line-height: 150px;
+}
