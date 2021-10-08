@@ -13,23 +13,16 @@ if (tate.getHours() >= 4 && tate.getHours() < 12) {
   greet = "Good Night, Sleep tight";
   head.color = "black";
 }
-
-function greeting() {
-  return ( <
-    >
-    <
-    div className = "greetdiv" >
-    <
-    h1 > {
-      " "
-    }
-    Hello Sir, < span style = {
-      head
-    } > {
-      `${greet}`
-    } < /span> < /
-    h1 > <
-    /div> < / >
+function greeting() {q
+  return (
+    <>
+      <div className="greetdiv">
+        <h1>
+          {" "}
+          Hello Sir, <span style={head}>{`${greet}`}</span>
+        </h1>
+      </div>
+    </>
   );
 }
 export default greeting;
